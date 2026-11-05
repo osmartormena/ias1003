@@ -1,5 +1,10 @@
 # Material paradidático de IAS1003 (Fundamentos de Modelagem e Análise de Dados)
 
+## Área de conhecimento
+
+- Análise de Dados;
+- Probabilidade e Estatística Aplicada.
+
 ## Ementa
 
 Aborda o estudo da transformação de fenômenos do mundo real em informações digitais tratáveis. O discente aprende conceitos de representação numérica, grandezas físicas, estatística descritiva, correlação e técnicas de limpeza e manipulação de conjuntos de dados. Ao final da disciplina o discente será capaz de organizar bases de dados e identificar padrões essenciais para o monitoramento de sistemas inteligentes.
@@ -21,3 +26,10 @@ Operação e Monitoramento de Sistemas de Inteligência Artificial (Utilizar rot
 
 - Organizar bases de dados, mobilizando ferramentas computacionais para extração de informações.
 - Descrever variáveis via gráficos, mobilizando a modelagem de dados para apoio técnico.
+
+## Carga horária
+
+60 h (4 aulas de 50 min semanais), dispostas como:
+- 15 h (1 aula semanal) teórica;
+- 30 h (2 aulas semanais) práticas;
+- 15 h (1 aula semanal) assíncrona (EaD).
