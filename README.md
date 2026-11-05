@@ -10,14 +10,14 @@ Operação e Monitoramento de Sistemas de Inteligência Artificial (Utilizar rot
 
 ## Temas de Estudos
 
-Álgebra Linear: Matrizes e Sistemas de 1º Ordem.
-Estatística.
-Medição e Incerteza: Como sensores geram dados e o que é ruído.
-Análise Exploratória: Médias, desvios e distribuições de dados de sensores.
-Modelos de Tendência: Usando Python para prever comportamentos lineares.
-Persistência de Dados: Tratamento de Logs: Como preparar dados reais para alimentar um modelo.
+- Álgebra Linear: Matrizes e Sistemas de 1º Ordem.
+- Estatística.
+- Medição e Incerteza: Como sensores geram dados e o que é ruído.
+- Análise Exploratória: Médias, desvios e distribuições de dados de sensores.
+- Modelos de Tendência: Usando Python para prever comportamentos lineares.
+- Persistência de Dados: Tratamento de Logs: Como preparar dados reais para alimentar um modelo.
 
 ## Resultados de aprendizagem
 
-Organizar bases de dados, mobilizando ferramentas computacionais para extração de informações.
-Descrever variáveis via gráficos, mobilizando a modelagem de dados para apoio técnico.
+- Organizar bases de dados, mobilizando ferramentas computacionais para extração de informações.
+- Descrever variáveis via gráficos, mobilizando a modelagem de dados para apoio técnico.
