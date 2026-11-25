@@ -1,5 +1,9 @@
 # Material paradidático de IAS1003 (Fundamentos de Modelagem e Análise de Dados)
 
+## Planejamento de aulas
+
+Nesta aproximação inicial, para a primeira oferta da disciplina, o planejamento de aulas pode ser encontrado neste [link](planejamentoAulas.md).
+
 ## Área de conhecimento
 
 - Análise de Dados;
@@ -13,7 +17,7 @@ Aborda o estudo da transformação de fenômenos do mundo real em informações 
 
 Operação e Monitoramento de Sistemas de Inteligência Artificial (Utilizar rotinas de programação e ferramentas de software para organizar bases de dados e acompanhar o desempenho de modelos de inteligência artificial aplicados a problemas reais).
 
-## Temas de Estudos
+## Temas de estudos
 
 - Álgebra Linear: Matrizes e Sistemas de 1º Ordem.
 - Estatística.
