@@ -1,6 +1,6 @@
 # Fundamentos de Modelagem e Análise de Dados
 
-**Curso:** Tecnologia de Inteligência Artificial e Sistemas Autônomos (1º período)
+**Curso:** Tecnologia de Inteligência Artificial e Sistemas Autônomos (1º período)  
 **Linguagem:** Python (Jupyter/Colab, NumPy, pandas, Matplotlib)
 
 > **Premissas deste plano:** 15 semanas, 4 h por semana, divididas em **2 h de prática** (laboratório de informática), **1 h de teoria** e **1 h EaD**. Todos os dados são **simulados**; a semana 15 prevê, se disponível, o uso de dados reais de bancada. Se o calendário real tiver feriados ou semanas de prova das outras disciplinas, basta fundir ou remover semanas conforme as indicações de ajuste no final.
