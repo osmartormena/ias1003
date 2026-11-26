@@ -46,102 +46,101 @@
 
 ### Semana 1 — Do fenômeno ao dado · Python I
 - **Objetivo:** compreender como um fenômeno físico vira informação digital e executar os primeiros códigos em Python.
-- **Teoria (1 h):** apresentação da disciplina, do plano e da avaliação; ciclo fenômeno → sensor → sinal → dado → informação; exemplos de sistemas autônomos.
-- **Prática (2 h):** configuração do ambiente (Colab ou Jupyter); variáveis, tipos (`int`, `float`, `str`, `bool`), operações, `print` e `input`; primeiro notebook.
-- **EaD (1 h):** questionário de diagnóstico (conhecimento prévio de programação e matemática) e lista de exercícios 1.
-- **Integração:** combinar com *Programação para Sistemas Autônomos* quais tópicos de Python ficam com cada disciplina.
+- **Teoria (1 aula):** apresentação da disciplina, do plano e da avaliação; ciclo fenômeno → sensor → sinal → dado → informação; exemplos de sistemas autônomos.
+- **Prática (2 aulas):** configuração do ambiente (Colab ou Jupyter); variáveis, tipos (`int`, `float`, `str`, `bool`), operações, `print` e `input`; primeiro notebook.
+- **EaD (1 aula):** questionário de diagnóstico (conhecimento prévio de programação e matemática) e lista de exercícios 1.
 
 ### Semana 2 — Python II: laços, condicionais e funções
 - **Objetivo:** escrever pequenos programas com decisão, repetição e funções.
-- **Teoria (1 h):** fluxo de controle e funções; leitura de código e depuração de erros comuns.
-- **Prática (2 h):** `if/else`, `for`, `while`, listas e dicionários; funções com parâmetros e retorno; exercício: conversão de unidades e leitura de uma lista de medidas.
-- **EaD (1 h):** lista de exercícios 2 (depuração de código com erros propostos).
+- **Teoria (1 aula):** fluxo de controle e funções; leitura de código e depuração de erros comuns.
+- **Prática (2 aulas):** `if/else`, `for`, `while`, listas e dicionários; funções com parâmetros e retorno; exercício: conversão de unidades e leitura de uma lista de medidas.
+- **EaD (1 aula):** lista de exercícios 2 (depuração de código com erros propostos).
 
 ### Semana 3 — Python III: NumPy, pandas e Matplotlib
 - **Objetivo:** manipular vetores e tabelas e produzir gráficos simples.
-- **Teoria (1 h):** por que usar vetores (vetorização); anatomia de um `DataFrame`; boas práticas de gráfico (eixos, unidades, legendas).
-- **Prática (2 h):** `numpy.array`, operações vetorizadas; `pandas.DataFrame` criado a partir de dados simulados; gráficos de linha e dispersão com Matplotlib.
-- **EaD (1 h):** lista de exercícios 3 — reproduzir um gráfico a partir de especificação.
+- **Teoria (1 aula):** por que usar vetores (vetorização); anatomia de um `DataFrame`; boas práticas de gráfico (eixos, unidades, legendas).
+- **Prática (2 aulas):** `numpy.array`, operações vetorizadas; `pandas.DataFrame` criado a partir de dados simulados; gráficos de linha e dispersão com Matplotlib.
+- **EaD (1 aula):** lista de exercícios 3 — reproduzir um gráfico a partir de especificação.
 - **Entrega:** notebook 1 (Python mínimo).
 
 ### Semana 4 — Álgebra linear I: vetores e matrizes
 - **Objetivo:** representar dados e relações lineares por vetores e matrizes.
-- **Teoria (1 h):** vetores, matrizes, soma, produto por escalar, produto matricial, transposta, identidade e inversa (ideia geométrica e numérica).
-- **Prática (2 h):** operações com `numpy` (`@`, `.T`, `np.linalg.inv`); interpretar uma tabela de dados como matriz (linhas = amostras, colunas = variáveis).
-- **EaD (1 h):** lista de exercícios 4.
+- **Teoria (1 aula):** vetores, matrizes, soma, produto por escalar, produto matricial, transposta, identidade e inversa (ideia geométrica e numérica).
+- **Prática (2 aulas):** operações com `numpy` (`@`, `.T`, `np.linalg.inv`); interpretar uma tabela de dados como matriz (linhas = amostras, colunas = variáveis).
+- **EaD (1 aula):** lista de exercícios 4.
 
 ### Semana 5 — Álgebra linear II: sistemas lineares
 - **Objetivo:** resolver sistemas de 2 a 4 equações e interpretar o resultado.
-- **Teoria (1 h):** sistema linear na forma matricial `Ax = b`; existência e unicidade de solução; condicionamento (noção).
-- **Prática (2 h):** `np.linalg.solve`; modelar com matrizes o problema de malhas de um circuito CC com valores simulados e verificar a solução com a lei de Kirchhoff.
-- **EaD (1 h):** problemas de sistemas lineares com contextos variados (misturas, circuitos, balanceamento).
+- **Teoria (1 aula):** sistema linear na forma matricial `Ax = b`; existência e unicidade de solução; condicionamento (noção).
+- **Prática (2 aulas):** `np.linalg.solve`; modelar com matrizes o problema de malhas de um circuito CC com valores simulados e verificar a solução com a lei de Kirchhoff.
+- **EaD (1 aula):** problemas de sistemas lineares com contextos variados (misturas, circuitos, balanceamento).
 - **Integração:** *Fundamentos de Eletricidade e Eletrônica* usa análise de malhas; avisar o(a) colega que esta semana é a oportunidade de combinar exemplos. Se o colega precisar antes, antecipar as semanas 4 e 5 para depois da semana 1.
 
 ### Semana 6 — Grandezas físicas, SI e sensores
 - **Objetivo:** identificar grandezas, unidades e a forma como sensores geram dados.
-- **Teoria (1 h):** grandezas e Sistema Internacional; algarismos significativos; resolução, faixa e sensibilidade de um sensor; representação numérica (ponto fixo e flutuante, noção).
-- **Prática (2 h):** simular um sensor (por exemplo, temperatura) com resolução finita e quantização; efeito de truncar e arredondar leituras.
-- **EaD (1 h):** estudo de um datasheet de sensor e preenchimento de um roteiro (faixa, resolução, precisão).
+- **Teoria (1 aula):** grandezas e Sistema Internacional; algarismos significativos; resolução, faixa e sensibilidade de um sensor; representação numérica (ponto fixo e flutuante, noção).
+- **Prática (2 aulas):** simular um sensor (por exemplo, temperatura) com resolução finita e quantização; efeito de truncar e arredondar leituras.
+- **EaD (1 aula):** estudo de um datasheet de sensor e preenchimento de um roteiro (faixa, resolução, precisão).
 - **Integração:** *Sistemas Digitais* trata de ponto flutuante e erros de arredondamento; alinhar vocabulário (erro absoluto, erro relativo).
 
 ### Semana 7 — Erro, incerteza e ruído · Avaliação 1
 - **Objetivo:** quantificar a incerteza de uma medição e distinguir ruído de sinal.
-- **Teoria (1 h):** erro absoluto e relativo; incerteza do tipo A (média e desvio da média); ruído aleatório e erro sistemático; propagação simples de incerteza.
-- **Prática (2 h):** simular N medidas de uma mesma grandeza com ruído gaussiano; calcular média, desvio-padrão e incerteza; ver como a incerteza cai com o aumento de N. Parte da aula reservada à **Avaliação 1**.
-- **EaD (1 h):** conclusão e envio do notebook da Avaliação 1.
+- **Teoria (1 aula):** erro absoluto e relativo; incerteza do tipo A (média e desvio da média); ruído aleatório e erro sistemático; propagação simples de incerteza.
+- **Prática (2 aulas):** simular N medidas de uma mesma grandeza com ruído gaussiano; calcular média, desvio-padrão e incerteza; ver como a incerteza cai com o aumento de N. Parte da aula reservada à **Avaliação 1**.
+- **EaD (1 aula):** conclusão e envio do notebook da Avaliação 1.
 - **Avaliação 1 (prática, individual):** notebook com Python, álgebra linear e medição (semanas 1 a 7).
 
 ### Semana 8 — Estatística descritiva I
 - **Objetivo:** resumir um conjunto de dados com medidas de posição e dispersão.
-- **Teoria (1 h):** média, mediana, moda, amplitude, variância, desvio-padrão, coeficiente de variação; quando usar cada uma.
-- **Prática (2 h):** `describe()` do pandas; histogramas; comparar duas séries simuladas de sensores (um preciso e outro ruidoso).
-- **EaD (1 h):** lista de exercícios 5 com interpretação de resumos estatísticos.
+- **Teoria (1 aula):** média, mediana, moda, amplitude, variância, desvio-padrão, coeficiente de variação; quando usar cada uma.
+- **Prática (2 aulas):** `describe()` do pandas; histogramas; comparar duas séries simuladas de sensores (um preciso e outro ruidoso).
+- **EaD (1 aula):** lista de exercícios 5 com interpretação de resumos estatísticos.
 
 ### Semana 9 — Estatística descritiva II: distribuições e outliers
 - **Objetivo:** reconhecer distribuições comuns e detectar valores atípicos.
-- **Teoria (1 h):** distribuição normal e uniforme (noção); quartis e intervalo interquartil; critério do boxplot; outlier como erro ou como evento.
-- **Prática (2 h):** gerar dados com `numpy.random`; histogramas, boxplots e gráficos de densidade; inserir falhas simuladas e detectá-las.
-- **EaD (1 h):** ficha de interpretação de gráficos (quais conclusões são justificáveis).
+- **Teoria (1 aula):** distribuição normal e uniforme (noção); quartis e intervalo interquartil; critério do boxplot; outlier como erro ou como evento.
+- **Prática (2 aulas):** gerar dados com `numpy.random`; histogramas, boxplots e gráficos de densidade; inserir falhas simuladas e detectá-las.
+- **EaD (1 aula):** ficha de interpretação de gráficos (quais conclusões são justificáveis).
 - **Integração:** preparar a base propositalmente desbalanceada que *Ética, Sustentabilidade e Humanização da Tecnologia* poderá usar para discutir vieses.
 
 ### Semana 10 — Correlação
 - **Objetivo:** medir e interpretar a relação entre duas variáveis.
-- **Teoria (1 h):** covariância; coeficiente de correlação de Pearson; correlação não implica causalidade.
-- **Prática (2 h):** gráficos de dispersão, `corr()` e mapa de calor de correlações; exemplos com correlações espúrias.
-- **EaD (1 h):** lista de exercícios 6 — classificar correlações em gráficos fornecidos.
+- **Teoria (1 aula):** covariância; coeficiente de correlação de Pearson; correlação não implica causalidade.
+- **Prática (2 aulas):** gráficos de dispersão, `corr()` e mapa de calor de correlações; exemplos com correlações espúrias.
+- **EaD (1 aula):** lista de exercícios 6 — classificar correlações em gráficos fornecidos.
 
 ### Semana 11 — Regressão linear I: mínimos quadrados
 - **Objetivo:** ajustar uma reta a dados e compreender o critério de mínimos quadrados.
-- **Teoria (1 h):** modelo `y = a·x + b`; minimizar a soma dos quadrados dos resíduos; equações normais em forma matricial (conecta as semanas 4 e 5).
-- **Prática (2 h):** ajustar uma reta de três formas: com as equações normais em `numpy`, com `np.polyfit` e com `scipy.stats.linregress` ou `scikit-learn`; comparar os resultados.
-- **EaD (1 h):** lista de exercícios 7.
+- **Teoria (1 aula):** modelo `y = a·x + b`; minimizar a soma dos quadrados dos resíduos; equações normais em forma matricial (conecta as semanas 4 e 5).
+- **Prática (2 aulas):** ajustar uma reta de três formas: com as equações normais em `numpy`, com `np.polyfit` e com `scipy.stats.linregress` ou `scikit-learn`; comparar os resultados.
+- **EaD (1 aula):** lista de exercícios 7.
 - **Integração:** exemplo com tensão e corrente simuladas (lei de Ohm) estimando a resistência com sua incerteza.
 
 ### Semana 12 — Regressão linear II: qualidade do ajuste · Avaliação 2
 - **Objetivo:** avaliar um ajuste e usá-lo para prever.
-- **Teoria (1 h):** resíduos, R², erro quadrático médio; extrapolar × interpolar; limites do modelo linear.
-- **Prática (2 h):** gráfico de resíduos; separar dados de ajuste e de teste; prever um valor novo com intervalo de plausibilidade. Parte da aula reservada à **Avaliação 2**.
-- **EaD (1 h):** conclusão e envio do notebook da Avaliação 2.
+- **Teoria (1 aula):** resíduos, R², erro quadrático médio; extrapolar × interpolar; limites do modelo linear.
+- **Prática (2 aulas):** gráfico de resíduos; separar dados de ajuste e de teste; prever um valor novo com intervalo de plausibilidade. Parte da aula reservada à **Avaliação 2**.
+- **EaD (1 aula):** conclusão e envio do notebook da Avaliação 2.
 - **Avaliação 2 (prática, individual):** estatística descritiva, correlação e regressão (semanas 8 a 12).
 
 ### Semana 13 — Logs e persistência de dados
 - **Objetivo:** ler, inspecionar e armazenar registros de sistemas.
-- **Teoria (1 h):** o que é um log; formatos CSV, JSON e texto; estrutura de uma base de dados e identificação de campos (inclusive dados pessoais, que serão discutidos em *Ética*).
-- **Prática (2 h):** `read_csv`, `read_json`, `to_csv`; inspeção com `info()` e `head()`; leitura de um log de eventos simulado (timestamps, níveis, mensagens).
-- **EaD (1 h):** lista de exercícios 8 — descrever a estrutura de três bases fornecidas.
+- **Teoria (1 aula):** o que é um log; formatos CSV, JSON e texto; estrutura de uma base de dados e identificação de campos (inclusive dados pessoais, que serão discutidos em *Ética*).
+- **Prática (2 aulas):** `read_csv`, `read_json`, `to_csv`; inspeção com `info()` e `head()`; leitura de um log de eventos simulado (timestamps, níveis, mensagens).
+- **EaD (1 aula):** lista de exercícios 8 — descrever a estrutura de três bases fornecidas.
 
 ### Semana 14 — Limpeza, séries temporais e preparação para modelos
 - **Objetivo:** transformar um log bruto em uma base pronta para análise.
-- **Teoria (1 h):** valores ausentes, duplicados e inconsistentes; tratamento (remover, imputar); normalização (noção); série temporal e reamostragem; separar entradas e saída de um modelo.
-- **Prática (2 h):** `isna()`, `dropna()`, `fillna()`, `to_datetime()`, `resample()`, médias móveis; limpar um log com falhas de leitura simuladas e plotar o resultado.
-- **EaD (1 h):** preparação do mini-projeto: escolha do tema e do conjunto de dados.
+- **Teoria (1 aula):** valores ausentes, duplicados e inconsistentes; tratamento (remover, imputar); normalização (noção); série temporal e reamostragem; separar entradas e saída de um modelo.
+- **Prática (2 aulas):** `isna()`, `dropna()`, `fillna()`, `to_datetime()`, `resample()`, médias móveis; limpar um log com falhas de leitura simuladas e plotar o resultado.
+- **EaD (1 aula):** preparação do mini-projeto: escolha do tema e do conjunto de dados.
 - **Integração:** o log com tendência e anomalias pode ser o do caso de manutenção preditiva de *Fábricas Inteligentes e Fundamentos de Autonomia*.
 
 ### Semana 15 — Projeto integrador: apresentações e devolutiva
 - **Objetivo:** executar o fluxo completo, do dado bruto ao resultado interpretado, e comunicá-lo.
-- **Teoria (1 h):** orientações finais para a apresentação; revisão dos conceitos centrais.
-- **Prática (2 h):** apresentações curtas (5 a 8 min por grupo) e discussão.
-- **EaD (1 h):** envio do relatório/notebook final e autoavaliação.
+- **Teoria (1 aula):** orientações finais para a apresentação; revisão dos conceitos centrais.
+- **Prática (2 aulas):** apresentações curtas (5 a 8 min por grupo) e discussão.
+- **EaD (1 aula):** envio do relatório/notebook final e autoavaliação.
 - **Entrega:** notebook do mini-projeto com problema, dados, limpeza, análise descritiva, ajuste linear, conclusões e limitações. **Se houver dados reais de bancada ao final do semestre, usá-los como estudo de caso comparativo.**
 
 ---
