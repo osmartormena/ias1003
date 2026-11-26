@@ -7,16 +7,16 @@
 
 ---
 
-## 1. Resultados de aprendizagem (proposta)
+## 1. Objetivos de aprendizagem específicos (*Intended Learning Outcomes*)
 
-| RA | Descrição |
+| ILO | Descrição |
 |----|-----------|
-| RA1 | Organizar bases de dados, mobilizando ferramentas computacionais para extração de informações. |
-| RA2 | Descrever variáveis via gráficos, mobilizando a modelagem de dados para apoio técnico. |
-| RA3 | Estimar erro e incerteza de medições, mobilizando o raciocínio quantitativo para avaliar a confiabilidade de sensores. |
-| RA4 | Resolver sistemas lineares com matrizes, mobilizando o cálculo computacional para modelar problemas de circuitos e de ajuste de dados. |
-| RA5 | Ajustar e interpretar um modelo de tendência linear, mobilizando a análise de correlação para prever comportamentos. |
-| RA6 | Preparar registros (logs) para análise, mobilizando técnicas de limpeza para alimentar modelos. |
+| ILO1 | Organizar bases de dados, mobilizando ferramentas computacionais para extração de informações. |
+| ILO2 | Descrever variáveis via gráficos, mobilizando a modelagem de dados para apoio técnico. |
+| ILO3 | Estimar erro e incerteza de medições, mobilizando o raciocínio quantitativo para avaliar a confiabilidade de sensores. |
+| ILO4 | Resolver sistemas lineares com matrizes, mobilizando o cálculo computacional para modelar problemas de circuitos e de ajuste de dados. |
+| ILO5 | Ajustar e interpretar um modelo de tendência linear, mobilizando a análise de correlação para prever comportamentos. |
+| ILO6 | Preparar registros (*logs*) para análise, mobilizando técnicas de limpeza para alimentar modelos. |
 
 ---
 
