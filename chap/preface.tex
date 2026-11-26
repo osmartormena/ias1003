@@ -2,14 +2,27 @@
 
 O autor é o primeiro a admitir que o presente material representa uma aproximação inicial de unidade curricular inédita. Assim, é possível (e esperado) que ele sofra substanciais alterações entre as ofertas. Isso não é uma defesa acerca da qualidade do conteúdo --- produzido com muito esmero --- mas uma aquiescência de que a execução da disciplina trará experiências que só poderão enriquecer ofertas futuras.
 
-A unidade curricular IAS1003 (Fundamentos de Modelagem e Análise de Dados) não ocorre num vácuo. Ela é apenas uma de 6 unidades curriculares do primeiro período do Curso Superior de Tecnologia em Inteligência Artificial e Sistemas Autônomos. Há uma distinta vantagem de lecionar no primeiro período: todos os discentes estão matriculados no mesmo conjunto de unidades curriculares, sendo elas:
+A unidade curricular \emph{Fundamentos de Modelagem e Análise de Dados} não ocorre num vácuo. Ela é apenas uma de 6 unidades curriculares do primeiro período do \emph{Curso Superior de Tecnologia em Inteligência Artificial e Sistemas Autônomos}. Há uma distinta vantagem de lecionar no primeiro período: todos os discentes estão matriculados no mesmo conjunto de unidades curriculares, sendo elas:
 \begin{itemize}
-	\item Fundamentos de Eletricidade e Eletrônica;
-	\item Sistemas Digitais;
-	\item Fundamentos de Modelagem e Análise de Dados;
-	\item Programação para Sistemas Autônomos;
-	\item Fábricas Inteligentes e Fundamentos de Autonomia;
-	\item Ética, Sustentabilidade e Humanização da Tecnologia.
+	\item \emph{Fundamentos de Eletricidade e Eletrônica};
+	\item \emph{Sistemas Digitais};
+	\item \emph{Fundamentos de Modelagem e Análise de Dados};
+	\item \emph{Programação para Sistemas Autônomos};
+	\item \emph{Fábricas Inteligentes e Fundamentos de Autonomia};
+	\item \emph{Ética, Sustentabilidade e Humanização da Tecnologia}.
 \end{itemize}
 
 Há um particular esforço para que a presente unidade curricular se valha de sinergias com as outras 5. Isso é feito para que a experiência de Ensino"-Aprendizagem seja a mais integrada possível. O intuito é executar uma formação da qualidade esperada para uma Universidade Federal, ao mesmo tempo que é mantida a celeridade na formação do nossas tecnólogas e tecnólogos.
+
+Nossa jornada, na execução de \emph{Fundamentos de Modelagem e Análise de Dados}, pode ser dividida nos seguintes blocos:
+\begin{description}
+	\item[Python mínimo ---] oferece um vocabulário básico de programação (variáveis, laços, funções) e as bibliotecas que sustentam o resto da disciplina: NumPy, pandas e Matplotlib. A sinergia principal é com \emph{Programação para Sistemas Autônomos}, que também ensina Python. Com \emph{Fundamentos de Eletricidade e Eletrônica} e \emph{Sistemas Digitais}, o ganho é indireto: depois deste bloco, os discentes podem usar Python para conferir cálculos de bancada e conversões de base.
+	\item[Álgebra linear ---] apresenta vetores e matrizes e termina em sistemas lineares resolvidos com \lstinline{numpy.linalg}. É o bloco mais alinhado com \emph{Fundamentos Eletricidade e Eletrônica}, cuja análise de malhas depende de sistemas de equações. Também prepara a regressão e ajuda \emph{Sistemas Digitais} a tratar bits e registradores como vetores, caso desejável.
+	\item[Medição ---] trata de grandezas, unidades do SI, sensores simulados, erro, incerteza e ruído. Aqui deveremos ter atenção na sobreposição de vocabulário: \emph{Fundamentos de Eletricidade e Eletrônica} trata de medidas empíricas, \emph{Sistemas Digitais} de erro numérico e arredondamento, enquanto aqui tratamos de incerteza estatística. Também sustenta \emph{Fábricas Inteligentes e Fundamentos de Autonomia}, que depende de entender como sensores geram dados.
+	\item[Estatística ---] resume dados com medidas de posição e dispersão e introduz distribuições e valores atípicos. É o bloco que mais alimenta \emph{Ética, Sustentabilidade e Humanização da Tecnologia}: uma base propositalmente desbalanceada permite que o aluno descubra um viés por análise exploratória, antes de discuti"-lo no plano ético. Com \emph{Fábricas Inteligentes e Fundamentos de Autonomia}, a detecção de \eng{outliers} é a porta de entrada para anomalias e manutenção preditiva.
+	\item[Modelagem ---] cobre correlação, regressão linear por mínimos quadrados e avaliação do ajuste, que é o \enquote{modelo de tendência} da ementa. Com \emph{Fundamentos de Eletricidade e Eletrônica}, o ajuste da lei de Ohm dá um exemplo concreto e permite estimar a resistência elétrica com sua incerteza. Com \emph{Fábricas Inteligentes e Fundamentos de Autonomia}, a previsão de tendência é o primeiro passo de gêmeos digitais e manutenção preditiva. Também é onde convém deixar claro o limite do modelo, um tema de transparência que conversa com \emph{Ética, Sustentabilidade e Humanização da Tecnologia}.
+	\item[Preparação dos dados ---] ensina a ler \eng{logs}, tratar valores ausentes e duplicados e organizar séries temporais. Casa bem com \emph{Programação para Sistemas Autônomos} e com \emph{Fábricas Inteligentes e Fundamentos de Autonomia}, que pode fornecer o caso de um \eng{log} relevante. Com \emph{Ética, Sustentabilidade e Humanização da Tecnologia}, é o momento de perguntar que dado pessoal ou sensível há no log e se precisa ser guardado (LGPD). Excelente oportunidade para agregar dados empíricos de bancada.
+	\item[Integração ---] fecha o período com o mini"-projeto, em que o aluno percorre o caminho completo do dado bruto ao resultado interpretado. É a oportunidade de reunir as outras disciplinas num único produto.
+\end{description}
+
+Os capítulos a seguir estruturam o corpo de conhecimentos que será abordado, mantendo a sequência dos módulos acima enumerados. Por se tratar de uma atividade e não um conteúdo, não há um capítulo dedicado à \textbf{Integração}.

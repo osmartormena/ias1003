@@ -31,14 +31,16 @@
 \DeclareRobustCommand\sin{\mathop{\operator@font sen}\nolimits}
 \makeatother
 
-%\newcommand*{\eng}[1]{\foreignlanguage{american}{\textit{#1}}}
+\newcommand*{\eng}[1]{\foreignlanguage{american}{\textit{#1}}}
 
 %\input{../acroTeX/acrolist}
-%\usepackage{csquotes}
+\usepackage{csquotes}
 %\usepackage{booktabs}
 %\usepackage{amssymb}
 %\usepackage{mathtools}
 %	\allowdisplaybreaks[1]
+\usepackage{listings}
+	\lstset{basicstyle=\small\ttfamily}
 %\usepackage{siunitx}
 %	\sisetup{locale=BR, per-mode=symbol}
 %\usepackage[backend=biber]{biblatex}
@@ -71,7 +73,12 @@
 \include{chap/preface.tex}
 
 \mainmatter
-\include{chap/intro.tex}
+\include{chap/python.tex}
+\include{chap/linalg.tex}
+\include{chap/measure.tex}
+\include{chap/statistics.tex}
+\include{chap/model.tex}
+\include{chap/data.tex}
 
 %\backmatter
 
