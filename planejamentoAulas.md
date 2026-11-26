@@ -20,7 +20,7 @@
 
 ---
 
-## 2. Visão geral das 15 semanas
+## 2. Visão geral (15 semanas)
 
 | Sem. | Tema | Bloco |
 |:---:|------|-------|
