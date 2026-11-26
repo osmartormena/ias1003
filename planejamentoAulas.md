@@ -145,7 +145,7 @@
 
 ---
 
-## 4. Avaliação (proposta de pesos)
+## 4. Avaliação
 
 | Instrumento | Peso |
 |-------------|:----:|
@@ -154,7 +154,7 @@
 | Avaliação 2: prática individual (semana 12) | 25% |
 | Mini-projeto integrador (semana 15) | 35% |
 
-Sugestão: avaliar o **raciocínio**, não apenas o código. Em cada avaliação, incluir uma questão em que o aluno explique, por escrito, por que escolheu determinado método e o que o resultado significa.
+Avaliar o **raciocínio**, não apenas o código. Em cada avaliação, incluir uma questão em que o aluno explique, por escrito, por que escolheu determinado método e o que o resultado significa.
 
 ---
 
@@ -162,7 +162,7 @@ Sugestão: avaliar o **raciocínio**, não apenas o código. Em cada avaliação
 
 | Disciplina | Ponto de contato | Semana |
 |------------|------------------|:------:|
-| Programação para Sistemas Autônomos | Divisão do conteúdo de Python; padrão de comentários e versionamento | 1–3 |
+| Programação para Sistemas Autônomos | Programação em Python; padrão de comentários e versionamento | 1–3 |
 | Fundamentos de Eletricidade e Eletrônica | Sistemas lineares (malhas); incerteza de medição; ajuste da lei de Ohm | 5, 7, 11 |
 | Sistemas Digitais | Vocabulário de erro numérico, arredondamento e ponto flutuante | 6 |
 | Fábricas Inteligentes e Fundamentos de Autonomia | Log de vibração/temperatura para manutenção preditiva | 14–15 |
@@ -171,12 +171,11 @@ Sugestão: avaliar o **raciocínio**, não apenas o código. Em cada avaliação
 ---
 
 ## 6. Pontos a combinar com os colegas
-1. **Python primeiro:** confirmar que *Programação* abordará Python (variáveis, laços, funções) nas primeiras semanas e deixará C para depois.
-2. **Sistemas lineares:** saber em que semana *Eletricidade* precisará de análise de malhas.
-3. **Vocabulário de erro e incerteza:** definir uma única notação para as três disciplinas.
-4. **Política de IA em código (vibe coding):** acordar uma regra comum sobre o uso de assistentes de código e como declarar esse uso.
-5. **Modelo único de relatório:** um padrão de documento para os trabalhos de todas as disciplinas.
-6. **Dados de bancada:** definir se algum conjunto real será compartilhado no fim do semestre.
+1. **Sistemas lineares:** saber em que semana *Eletricidade* precisará de análise de malhas.
+2. **Vocabulário de erro e incerteza:** definir uma única notação para as três disciplinas.
+3. **Política de IA em código (vibe coding):** acordar uma regra comum sobre o uso de assistentes de código e como declarar esse uso.
+4. **Modelo único de relatório:** um padrão de documento para os trabalhos de todas as disciplinas.
+5. **Dados de bancada:** definir se algum conjunto real será compartilhado no fim do semestre.
 
 ---
 
