@@ -1,3 +1,160 @@
 \chapter{Python mínimo}
 
 A
+
+\section{Dos fenômenos aos dados}
+
+Todo dado que um sistema inteligente usa nasceu como algum fenômeno físico: o calor de um motor, a vibração de um eixo, a luz que chega a uma câmera. A Figura~\ref{fig:ciclo} resume o caminho até uma decisão.
+ 
+\begin{figure}[htb]
+\centering
+\begin{tikzpicture}[
+    node distance=10mm and 10mm,
+    box/.style={draw, rounded corners, align=center,
+                minimum width=2cm, minimum height=1cm},
+    >=stealth]
+  \node[box] (f) {Fenômeno\\físico};
+  \node[box, right=of f] (s) {Sensor\\(transdutor)};
+  \node[box, right=of s] (c) {Sinal\\elétrico};
+  \node[box, right=of c] (a) {Conversor\\A/D};
+  \node[box, below=of f] (d) {Dado\\digital};
+  \node[box, below=of s] (i) {Informação};
+  \node[box, below=of c] (x) {Decisão\\e ação};
+  \draw[->] (f) -- (s);
+  \draw[->] (s) -- (c);
+  \draw[->] (c) -- (a);
+  \draw[->] (a.south) -- ++(0,-6mm) -| (d.north);
+  \draw[->] (d) -- (i);
+  \draw[->] (i) -- (x);
+\end{tikzpicture}
+\caption{Do fenômeno físico à decisão. O trecho superior é o domínio da instrumentação; o inferior, o da análise de dados.}
+\label{fig:ciclo}
+\end{figure}
+ 
+\subsubsection{Fenômeno e grandeza física}
+ 
+Um \emph{fenômeno} é algo que acontece no mundo físico. Para tratá-lo de forma quantitativa, escolhemos uma \emph{grandeza física}: uma propriedade que pode ser medida e expressa por um número e uma unidade, como temperatura (\unit{\degreeCelsius} ou \unit{\kelvin}), tensão elétrica (\unit{\volt}), corrente (\unit{\ampere}), velocidade (\unit{\meter\per\second}) ou aceleração (\unit{\meter\per\second\squared}). As unidades seguem o \ac{si}.
+ 
+\subsubsection{Sensor e transdutor}
+ 
+Um \emph{sensor} converte uma grandeza física em outra, geralmente elétrica, que um circuito consegue tratar. Quando essa conversão envolve mudança de natureza da energia, fala-se em \emph{transdutor}. Alguns exemplos:
+\begin{description}
+	\item[termistor] --- temperatura $\rightarrow$ resistência elétrica;
+	\item[acelerômetro] --- aceleração $\rightarrow$ tensão ou sinal digital;
+	\item[fotodiodo ou câmera] --- luz $\rightarrow$ corrente ou imagem;
+	\item[encoder] --- posição angular $\rightarrow$ pulsos.
+\end{description}
+ 
+\subsubsection{Sinal e condicionamento}
+ 
+A saída do sensor é um \emph{sinal} elétrico, contínuo no tempo e na amplitude (analógico). Esse sinal quase nunca está pronto para uso: pode ser fraco, ter deslocamento de nível ou conter \emph{ruído}, isto é, variações aleatórias que não vêm do fenômeno de interesse. O \emph{condicionamento} (amplificação, filtragem, ajuste de nível) prepara o sinal para a etapa seguinte.
+ 
+\subsubsection{Amostragem e quantização}
+ 
+Um computador só trabalha com números. A conversão analógico"-digital (A/D) faz duas discretizações:
+\begin{enumerate}
+	\item Amostragem --- o sinal é lido em instantes espaçados de $T$ (em \unit{\second}), ou seja, com taxa $f_s = 1/T$ (em \unit{\hertz});
+  \item Quantização --- cada leitura é aproximada por um entre $2^N$ valores possíveis, onde $N$ é o número de bits do conversor.
+\end{enumerate}
+ 
+Se o conversor mede tensões entre $0$ e $V_{\mathrm{ref}}$, a menor variação que ele distingue, a \textbf{resolução}, é
+\begin{equation}
+  \Delta = \frac{V_{\mathrm{ref}}}{2^{N}}.
+  \label{eq:resolucao}
+\end{equation}
+ 
+\paragraph{Exemplo.} Um ADC de $10$ bits com $V_{\mathrm{ref}} = 3{,}3\,\mathrm{V}$ tem
+\[
+  \Delta = \frac{3{,}3}{2^{10}} = \frac{3{,}3}{1024} \approx 3{,}22\,\mathrm{mV}.
+\]
+Se o sensor fornece $10\,\mathrm{mV}$ por grau Celsius, a menor variação de temperatura distinguível é de cerca de \qty{0.32}{\degreeCelsius}. Medidas mais finas exigem mais bits, um sensor mais sensível ou ambos. O efeito da resolução e da amostragem sobre os dados será explorado na semana 6.
+ 
+\subsection{Dado, informação e decisão}
+\label{sec:dik}
+ 
+Uma sequência de números não é, por si só, útil. O valor aparece quando eles são transformados em algo que apoia uma decisão. A Tabela~\ref{tab:dik} separa os níveis.
+ 
+\begin{table}[htb]
+\centering
+\caption{Dado, informação e decisão, no exemplo da temperatura de um motor.}
+\label{tab:dik}
+\begin{tabular}{@{}p{2.2cm}p{4.2cm}p{4.5cm}@{}}
+\toprule
+\textbf{Nível} & \textbf{O que é} & \textbf{Exemplo} \\
+\midrule
+Dado        & registro bruto, sem contexto
+						& \qty{71.2}{\degreeCelsius}, \qty{71.5}{\degreeCelsius}, \qty{71.3}{\degreeCelsius} \\
+Informação  & dado organizado, resumido e contextualizado
+						& a temperatura média na última hora foi \qty{71.3}{\degreeCelsius}, com tendência de alta \\
+Decisão     & escolha ou ação com base na informação
+            & manter operação; se ultrapassar o limite, reduzir a carga e emitir alerta \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+O restante da disciplina ensina a percorrer esse caminho: organizar os dados, descrevê-los por números e gráficos, ajustar um modelo e dizer o que se pode concluir, e com que confiança.
+ 
+\subsection{Exemplo resolvido}
+\label{sec:resolvido}
+ 
+Um sensor de temperatura de um motor é lido cinco vezes em sequência:
+\[
+  70{,}8;\ 71{,}2;\ 71{,}0;\ 71{,}5;\ 71{,}1\quad (\,^{\circ}\mathrm{C}\,).
+\]
+ 
+\textbf{Dado:} as cinco leituras acima.
+ 
+\textbf{Informação:} a média é
+\[
+  \bar{T} = \frac{70{,}8+71{,}2+71{,}0+71{,}5+71{,}1}{5} = \frac{355{,}6}{5} = 71{,}12\ ^{\circ}\mathrm{C},
+\]
+e as leituras variam em torno dela em menos de \qty{1}{\degreeCelsius}. Essa variação entre leituras de um mesmo estado é um indício de \emph{ruído} de medição.
+ 
+\textbf{Decisão:} se o limite de operação for \qty{90}{\degreeCelsius}, o motor opera com folga, e nenhum alerta é necessário. Note que uma única leitura poderia induzir a erro (por exemplo, um pico isolado de \qty{95}{\degreeCelsius} causado por interferência); olhar o conjunto de dados dá mais segurança. Quantificar essa segurança é o objetivo dos blocos de medição e estatística.
+ 
+\subsection{Conexões com as demais disciplinas}
+ 
+\begin{itemize}
+  \item \textbf{Fundamentos de Eletricidade e Eletrônica:} as grandezas elétricas medidas na bancada (tensão, corrente) serão, em simulação, os dados que analisaremos.
+  \item \textbf{Sistemas Digitais:} representação numérica e a conversão A/D se apoiam em bases numéricas e binário.
+  \item \textbf{Programação para Sistemas Autônomos:} Python é a ferramenta comum; vamos usá-la desde esta semana.
+  \item \textbf{Fábricas Inteligentes e Fundamentos de Autonomia:} manutenção preditiva e gêmeos digitais dependem do tipo de dado discutido aqui.
+  \item \textbf{Ética, Sustentabilidade e Humanização da Tecnologia:} todo dado coletado levanta perguntas sobre privacidade e uso responsável, que voltaremos a discutir ao tratar de logs.
+\end{itemize}
+ 
+\subsection{Resumo}
+ 
+\begin{itemize}
+  \item Sistemas autônomos decidem com base em dados, e a qualidade da decisão depende da qualidade dos dados.
+  \item O caminho é: fenômeno $\rightarrow$ sensor $\rightarrow$ sinal elétrico $\rightarrow$ conversão A/D $\rightarrow$ dado $\rightarrow$ informação $\rightarrow$ decisão.
+  \item A conversão A/D discretiza no tempo (amostragem) e na amplitude (quantização); a resolução é $\Delta = V_{\mathrm{ref}}/2^{N}$.
+  \item Dado é o registro bruto; informação é o dado organizado e contextualizado; a decisão usa a informação.
+\end{itemize}
+ 
+\subsection{Exercícios de fixação}
+ 
+\begin{enumerate}
+  \item Cite três grandezas físicas que um veículo autônomo precisa medir e o tipo de sensor adequado a cada uma.
+  \item Dê um exemplo próprio, fora dos usados em aula, que distinga dado, informação e decisão.
+  \item Um ADC de $12$ bits tem $V_{\mathrm{ref}} = 5\,\mathrm{V}$. Calcule sua resolução. Se o sensor conectado fornece $10\,\mathrm{mV}/^{\circ}\mathrm{C}$, qual a menor variação de temperatura distinguível?
+	\item Um sensor mede de \qty{0}{\degreeCelsius} a \qty{100}{\degreeCelsius} e fornece tensão linearmente de $0$ a $3{,}3\,\mathrm{V}$. A leitura foi $1{,}65\,\mathrm{V}$. Qual a temperatura?
+  \item Por que, no exemplo resolvido, convém olhar várias leituras em vez de uma só antes de decidir?
+\end{enumerate}
+ 
+\subsubsection*{Respostas}
+ 
+\begin{enumerate}
+  \item Resposta livre; por exemplo: distância a obstáculos (LiDAR ou radar), posição global (GNSS), velocidade angular das rodas (encoder).
+  \item Resposta livre; conferir se o dado é bruto, a informação é um resumo contextualizado e a decisão é uma ação.
+	\item $\Delta = 5/4096 \approx 1{,}22\,\mathrm{mV}$; $1{,}22/10 \approx$ \qty{0.12}{\degreeCelsius}.
+	\item \qty{50}{\degreeCelsius} (leitura no ponto médio da faixa).
+  \item Porque uma leitura isolada pode conter ruído ou um erro pontual; o conjunto permite estimar um valor típico e a variação entre leituras.
+\end{enumerate}
+ 
+\subsection{Para a próxima etapa}
+ 
+Na prática desta semana, você vai configurar o ambiente (Google Colab ou Jupyter), escrever os primeiros programas em Python (variáveis, tipos e operações) e organizar as leituras de um sensor simulado em listas. No EaD, responda ao questionário diagnóstico e resolva a lista de exercícios~1.
+
+\section{Aula 2}
+
+A
